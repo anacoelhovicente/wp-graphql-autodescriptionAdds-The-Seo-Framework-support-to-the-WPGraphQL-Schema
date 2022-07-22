@@ -17,5 +17,9 @@
     "psr-4": {
       "WPGraphQL\\AutoDescription\\": "src/"
     }
+  },
+  "require": {
+    "wp-graphql/wp-graphql": ">=1.8.0",
+    "wpackagist-plugin/autodescription": ">=3.0.3"
   }
 }
