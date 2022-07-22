@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: WPGraphQL for The Seo Framework
- * Plugin URI: https: //github.com/anacoelhovicente/wp-graphql-autodescription
+ * Plugin URI: https://github.com/anacoelhovicente/wp-graphql-autodescription
  * Description: Adds support for The Seo Framework to the WPGraphQL Schema.
  * Author: Ana Vicente
- * Author URI: https: //anavicente.me
+ * Author URI: https://anavicente.me
  * Version: 1.0.1
  * Text Domain: wp-graphql-autodescription
  * Requires at least: 4.7.0
