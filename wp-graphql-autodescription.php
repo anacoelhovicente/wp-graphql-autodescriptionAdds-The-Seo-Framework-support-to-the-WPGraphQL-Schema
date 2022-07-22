@@ -5,7 +5,7 @@
  * Description: Adds support for The Seo Framework to the WPGraphQL Schema.
  * Author: Ana Vicente
  * Author URI: https: //anavicente.me
- * Version: 1.1.1
+ * Version: 1.0.1
  * Text Domain: wp-graphql-autodescription
  * Requires at least: 4.7.0
  * Tested up to: 5.8.1
