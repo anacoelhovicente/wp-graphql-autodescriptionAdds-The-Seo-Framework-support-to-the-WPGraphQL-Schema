@@ -2,13 +2,13 @@
 /**
  * Plugin Name: WPGraphQL for The Seo Framework
  * Plugin URI: https: //github.com/anacoelhovicente/wp-graphql-autodescription
- * Description: Adds support for The Seo Framework to the WPGraphQL Schema. Requires WPGraphQL version 0.4.0 or newer.
+ * Description: Adds support for The Seo Framework to the WPGraphQL Schema.
  * Author: Ana Vicente
  * Author URI: https: //anavicente.me
  * Version: 0.0.1
  * Text Domain: wp-graphql-autodescription
  * Requires at least: 4.7.0
- * Tested up to: 5.8
+ * Tested up to: 5.8.1
  *
  * @package WP_Graphql_Auto_Description
  */
@@ -24,8 +24,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 /**
  * Define constants
  */
-const WPGRAPHQL_REQUIRED_MIN_VERSION = '0.4.0';
-const WPGraphQL_THESEOFRAMEWORK_VERSION = '0.5.3';
+const WPGRAPHQL_REQUIRED_MIN_VERSION = '1.8.0';
+const WPGRAPHQL_THESEOFRAMEWORK_VERSION = '3.0.3';
 
 /**
  * Initialize the plugin
@@ -73,12 +73,10 @@ function show_admin_notice()
     add_action(
         'admin_notices',
         function () {
-            ?>
-			<div class="error notice">
-				<p><?php esc_html_e(sprintf('Both WPGraphQL (v%s+) and Advanced Custom Fields (v5.7+) must be active for "wp-graphql-autodescription" to work', WPGRAPHQL_REQUIRED_MIN_VERSION), 'wp-graphql-autodescription');?></p>
-			</div>
-			<?php
-}
+            echo '<div class="error notice">';
+            echo '<p>' . esc_html__(sprintf('Both WPGraphQL (v%s+) and The Seo Framework (v%s+) must be active for "wp-graphql-autodescription" to work', WPGRAPHQL_REQUIRED_MIN_VERSION, WPGRAPHQL_THESEOFRAMEWORK_VERSION), 'wp-graphql-autodescription') . '</p>';
+            echo '</div>';
+        }
     );
 }
 
