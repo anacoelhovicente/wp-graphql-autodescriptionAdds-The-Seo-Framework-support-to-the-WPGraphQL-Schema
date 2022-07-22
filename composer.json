@@ -1,0 +1,21 @@
+{
+  "name": "anacoelhovicente/wp-graphql-autodescription",
+  "description": "Adds support for The Seo Framework to the WPGraphQL Schema",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Ana Vicente",
+      "email": "contact@anavicente.me"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "process-timeout": 0
+  },
+  "autoload": {
+    "psr-4": {
+      "WPGraphQL\\AutoDescription\\": "src/"
+    }
+  }
+}
