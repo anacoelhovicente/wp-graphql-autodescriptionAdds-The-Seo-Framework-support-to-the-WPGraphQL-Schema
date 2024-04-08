@@ -15,6 +15,11 @@
 
 namespace WPGraphQL\AutoDescription;
 
+require_once __DIR__ . '/src/AutoDescription.php';
+require_once __DIR__ . '/src/ContentNodes.php';
+require_once __DIR__ . '/src/SiteSettings.php';
+require_once __DIR__ . '/src/Utils.php';
+
 if (!defined('ABSPATH')) {
     exit;
 }
